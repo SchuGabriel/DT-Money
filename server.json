@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createAt": "2025-04-09T18:16:41.493Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createAt": "2025-04-09T18:05:15.493Z"
+    },
+    {
+      "description": "Teste1",
+      "price": 100,
+      "category": "Toma essa",
+      "type": "income",
+      "createAt": "2025-04-14T15:22:33.422Z",
+      "id": 3
+    },
+    {
+      "description": "Refri",
+      "price": 6,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createAt": "2025-04-14T19:50:59.357Z",
+      "id": 4
+    }
+  ]
+}
