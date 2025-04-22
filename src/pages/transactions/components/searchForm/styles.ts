@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const SearchFormContainer = styled.form`
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 
   input {
     flex: 1;
@@ -40,7 +42,14 @@ export const SearchFormContainer = styled.form`
       background-color: ${(props) => props.theme["green-500"]};
       border-color: ${(props) => props.theme["green-500"]};
       color: ${(props) => props.theme["white"]};
-      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+      transition:
+        background-color 0.2s,
+        color 0.2s,
+        border-color 0.2s;
+    }
+
+    @media (max-width: 394px) {
+      
     }
   }
 `;

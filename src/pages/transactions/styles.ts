@@ -7,6 +7,11 @@ export const TransactionsContainer = styled.main`
   padding: 0 1.5rem;
 `;
 
+export const TableWrapper = styled.div`
+  width: 100%;
+  overflow-x: auto;
+`;
+
 export const TransactionsTable = styled.table`
   width: 100%;
   border-collapse: separate;
@@ -20,6 +25,7 @@ export const TransactionsTable = styled.table`
     &:first-child {
       border-top-left-radius: 6px;
       border-bottom-left-radius: 6px;
+      width: 50%;
     }
 
     &:last-child {

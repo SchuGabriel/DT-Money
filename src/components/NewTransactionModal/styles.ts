@@ -21,6 +21,10 @@ export const Content = styled(Dialog.Overlay)`
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @media (max-width: 535px) {
+    min-width: auto;
+  }
+
   form {
     margin-top: 2rem;
     display: flex;
