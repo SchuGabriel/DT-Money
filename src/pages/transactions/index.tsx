@@ -10,12 +10,16 @@ import { SearchForm } from "./components/searchForm";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
 import { dateFromatter, priceFormatter } from "../../utils/formatter";
 import { useContextSelector } from "use-context-selector";
+import { CustomPagination } from "../../components/pagination";
 
 export function Transactions() {
-  const transactions = useContextSelector(TransactionsContext, (context) => {
-    return context.transactions;
-  });
-  
+  const transactionsCurrentPage = useContextSelector(
+    TransactionsContext,
+    (context) => {
+      return context.transactionsCurrentPage;
+    }
+  );
+
   return (
     <div>
       <Header />
@@ -25,7 +29,7 @@ export function Transactions() {
         <TableWrapper>
           <TransactionsTable>
             <tbody>
-              {transactions.map((transaction) => {
+              {transactionsCurrentPage.map((transaction) => {
                 return (
                   <tr key={transaction.id}>
                     <td>{transaction.description}</td>
@@ -45,6 +49,7 @@ export function Transactions() {
             </tbody>
           </TransactionsTable>
         </TableWrapper>
+        <CustomPagination />
       </TransactionsContainer>
     </div>
   );

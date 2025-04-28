@@ -13,10 +13,10 @@ const searchFormSchema = zod.object({
 type SearchFormInputs = zod.infer<typeof searchFormSchema>;
 
 export function SearchForm() {
-  const fetchTransactions = useContextSelector(
+  const fetchTransactionsCurrentPage = useContextSelector(
     TransactionsContext,
     (context) => {
-      return context.fetchTransactions;
+      return context.fetchTransactionsCurrentPage;
     }
   );
 
@@ -29,7 +29,7 @@ export function SearchForm() {
 });
 
   async function handleSearchTransactions(data: SearchFormInputs) {
-    await fetchTransactions(data.query);
+    await fetchTransactionsCurrentPage(data.query);
   }
 
   return (

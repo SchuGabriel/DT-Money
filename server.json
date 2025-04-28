@@ -31,6 +31,46 @@
       "type": "outcome",
       "createAt": "2025-04-14T19:50:59.357Z",
       "id": 4
+    },
+    {
+      "id": 5,
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createAt": "2025-04-09T18:05:15.493Z"
+    },
+    {
+      "description": "Teste1",
+      "price": 100,
+      "category": "Toma essa",
+      "type": "income",
+      "createAt": "2025-04-14T15:22:33.422Z",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "description": "Bala",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 5,
+      "createAt": "2025-04-09T18:05:50.493Z"
+    },
+    {
+      "id": 8,
+      "description": "Barbo",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 29,
+      "createAt": "2025-04-09T18:06:15.493Z"
+    },
+    {
+      "id": 9,
+      "description": "Refri",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 5,
+      "createAt": "2025-04-09T18:07:15.493Z"
     }
   ]
 }
